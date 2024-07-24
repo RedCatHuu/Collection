@@ -4,19 +4,19 @@ import java.time.LocalDate;
 
 public class Task {
 	private LocalDate localDate;
-	private String str;
+	private String task;
 	
 	public Task(LocalDate localDate, String str) {
 		this.localDate = localDate;
-		this.str = str;
+		this.task = str;
 	}
 	
     public LocalDate getLocalDate() {
-        return localDate;
+        return this.localDate;
     }
     
     @Override
     public String toString() {
-        return localDate + ":" + str;
+        return this.localDate + ":" + this.task;
     }
 }
